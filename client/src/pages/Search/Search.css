@@ -1,0 +1,29 @@
+.search{
+    width: 1260px;
+    min-height:calc(100vh - 310px);
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+}
+
+
+.search .products-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width:768px){
+    .search{
+        width: 100vw;
+        padding: 10px;
+    }
+    .search > h1{
+        font-size: 22px;
+    }
+    .search .products-container{
+        align-items: center;
+        justify-content: center;
+    }
+}

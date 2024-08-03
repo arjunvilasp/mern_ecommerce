@@ -1,0 +1,19 @@
+.quantity-btn {
+    width: 50%;
+    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto
+}
+
+
+.quantity-btn button{
+    background-color: transparent;
+    font-weight: 500;
+    border: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}

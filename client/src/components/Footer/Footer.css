@@ -1,0 +1,74 @@
+.footer{
+    width: 1260px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.footer .links{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer .links a{
+    color: grey;
+    transition: all .3s ease;
+}
+
+.footer .links a:hover{
+    color: #000;
+}
+
+.footer .socials{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer .socials a{
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    background-color:#cec8c8;
+    color: #5a5959;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+
+.footer .socials a:nth-child(1n):hover{
+    background-color: rgb(55, 127, 228);
+    color: #fff;
+}
+.footer .socials a:nth-child(2n):hover{
+    background-color: rgb(39, 39, 208);
+    color: #fff;
+}
+.footer .socials a:nth-child(3n):hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+.footer .socials a:nth-child(4n):hover{
+    background:linear-gradient(50deg,#f5a152,#e52648,#b93c7f,#5a56a3);
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .footer{
+        width: 100vw;
+        height: 180px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,190 @@
+.profile-page {
+  width: 1260px;
+  min-height: calc(100vh 250px);
+  margin: auto;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.profile-container {
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.profile-header {
+  height: 120px;
+  background-color: #ddd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-header .edit-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.profile-content {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-pic img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.profile-pic .img-border {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(180deg, #fff 55%, #ddd 50%);
+}
+
+.profile-info {
+  margin-top: 20px;
+  color: #4a4a4a;
+}
+
+.profile-info h2 {
+  text-align: center;
+}
+
+.profile-details {
+  padding: 20px;
+  color: #4a4a4a;
+}
+
+.profile-details .address {
+  width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+}
+
+
+.profile-page .profile-edit{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+.profile-edit .close-btn{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: grey;
+    cursor: pointer;
+}
+
+.profile-edit form {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ddd;
+    text-align: center;
+  }
+
+.profile-edit input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  
+  .profile-edit select {
+    width: 225px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .profile-edit form .address {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .profile-edit form .address input {
+    width: 225px;
+  }
+  
+  .profile-edit button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .profile-edit button:hover {
+    background-color: #222;
+  }
+  
+  .profile-edit .link {
+    margin-top: 25px;
+    float: right;
+    font-size: 14px;
+  }
+
+
+  @media (max-width:768px){
+    .profile-page {
+      width: 100vw;
+      min-height: calc(100vh 250px);
+    }
+    .profile-container {
+      width: 100%;
+    }
+    .profile-edit form {
+      width: 100%;
+      padding: 20px;
+    }
+    .profile-edit select {
+      width: 100%;
+    }
+    .profile-edit form .address input {
+      width: 100%;
+    }
+    .profile-edit .close-btn{
+      top: 40px;
+      right: 10px;
+  }
+  
+  }

@@ -1,0 +1,30 @@
+.new-arrivals{
+    width: 1260px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+
+.new-arrivals > h1{
+    font-size: 30px;
+    margin: 20px auto;
+}
+
+.new-arrivals .product-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+
+
+@media (max-width:768px){
+    .new-arrivals{
+        width: 100vw;
+        height: fit-content;
+    }
+    .new-arrivals .product-cards{
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+    }
+}

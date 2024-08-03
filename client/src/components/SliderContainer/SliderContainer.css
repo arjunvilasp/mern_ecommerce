@@ -1,0 +1,12 @@
+.slider-container {
+  width: 1260px;
+  height: calc(100vh - 100px);
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    width: 100vw;
+    height: 400px;
+  }
+}
