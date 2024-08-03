@@ -161,7 +161,7 @@ const Navbar = () => {
               className="wislist-container"
               style={{ display: wishlistVisible && authUser ? "initial" : "none" }}
             >
-              {authUser && wishlist.length > 0 ? (
+              {wishlist.length > 0 ? (
                 wishlist.map((item, i) => (
                   <div className="wishlist-item" key={i}>
                     <img src={item.image} height={50} width={50} alt="item" />
